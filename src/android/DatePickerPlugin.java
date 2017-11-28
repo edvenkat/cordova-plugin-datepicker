@@ -225,12 +225,12 @@ public class DatePickerPlugin extends CordovaPlugin {
 								public void onDateChanged(DatePicker view, int year, int month, int day) {
 									if(maxDate > 0 && maxDate > minDate) {
 										if(year > maxYear || month > maxMonth && year == maxYear || day > maxDay && year == maxYear && month == maxMonth){
-											view.updateDate(maxYear, maxMonth, maxDay);
+											//view.updateDate(maxYear, maxMonth, maxDay);
 										}
 									}
 									if(minDate > 0) {
 										if(year < minYear || month < minMonth && year == minYear || day < minDay && year == minYear && month == minMonth) {
-											view.updateDate(minYear, minMonth, minDay);
+											//view.updateDate(minYear, minMonth, minDay);
 										}
 									}
 								}
